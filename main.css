@@ -1,0 +1,174 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+}
+
+header {
+  background-color: white;
+}
+
+.container {
+  background-color: orange;
+  /*min-width: 100%;*/
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*figure {
+  justify-content: flex-start;
+}*/
+img {
+  min-height: 90px;
+  max-height: 250px;
+  width: auto;
+  border-radius: 25px;
+}
+
+.content{
+  background-color: #f4f4d4;
+  align-items: center;
+  margin-right: 5%;
+  padding: 5px 30px;
+  border-radius: 8px;
+  box-shadow: -3px 6px 5px -3px black;
+}
+
+.content p {
+  font-size: 98%;
+}
+
+.fm-section {
+  background-color: #f4f4d4;
+  padding: 60px;
+}
+
+ .frm-container {
+   width: 80%;
+   margin: 0 auto;
+ }
+ 
+ form {
+   background-color: #ffffffc1;
+   padding: 5px 75px;
+   border: none;
+   border-radius: 25px;
+   border-top-left-radius: 2px;
+   border-bottom-right-radius: 2px;
+   opacity: 0.7;
+   margin: 0;
+ }
+ 
+ input {
+   padding: 3px;
+   background-color: black;
+   border: none;
+   border-radius: 5px;
+   border-bottom: 3px solid orange;
+   height: 35px;
+   color: grey;
+   width: 100%;
+   margin: 0;
+ }
+
+input::focus, button::focus {
+  outline: none;
+}
+
+textarea,
+button {
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+  border-bottom: 3px solid orange;
+  background-color: black;
+  color: grey;
+  /*padding: 5px;*/
+  margin: 0;
+  width: 100%;
+}
+
+button {
+  font-size: 95%;
+  font-weight: bolder;
+  background-color: orange;
+  padding: 10px 0;
+  height: 35px;
+  margin: 25px 0;
+  border: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.ft-section {
+  background-color: orange;
+  padding: 35px 0;
+}
+
+.pwrap {
+  font-size: 120%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+
+
+
+/*--media query--*/
+
+@media screen and (max-width: 720px) {
+  
+ .container {
+    background-color: orange;
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  figure {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content{
+    margin: 5%;
+    padding: 5px 40px;
+    border-radius: 20px;
+  }
+  
+    
+  .fm-section {
+    background-color: #f4f4d4;
+    padding: 60px 25px;
+  }
+  
+ .frm-container {
+   width: 90%;
+   margin: 0 auto;
+ }
+  
+ form {
+   background-color: #ffffffc1;
+   padding: 5px 35px;
+ }
+   
+  .pwrap {
+    font-size: 80%;
+  }
+
+}
